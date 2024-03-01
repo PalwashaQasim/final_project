@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Contact me</title>
+</head>
+
+<style>
+
+body{
+   overflow-x: hidden;
+   width: 100%;
+   height: 100vh;
+   font-size: 16px;
+   background-color: #1e1f26;
+   color: #faebd7;
+}
+
+            /* ********************* navbar **********************  */
+
+            a{
+  text-decoration: none;
+}
+  
+.navbar{
+   display: flex;
+   left: 0;
+   position: absolute;
+   top: 20px;
+   font-family: "ROBOTO", sans-serif;
+   width: 100%;
+   height: 75px;
+   box-shadow: 20px 0px 30px rgb(68, 173, 140);
+   background: #1e1f26;
+}
+  
+.nav{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex: 1;
+   color: #03dac6;
+   letter-spacing: 1.8px;
+   font-size: 1.5vw;
+}
+  
+.nav:hover{
+   color: #ff0266;
+
+}
+
+            /* ********************* contact_title **********************  */
+
+.head1{
+  position: relative;
+  top: 115px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 80px;
+  color: #e5ff00;
+  text-shadow: 20px 0 70px #e5ff00;
+}
+
+.head2{
+  position: relative;
+  top: 100px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 40px;
+  color: #ff0266;
+  text-shadow: 20px 0 70px #ff0266;
+}
+
+.head3{
+  position: relative;
+  top: 50px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 20px;
+  color: #faebd7;
+  text-shadow: 20px 0 70px #faebd7;
+}
+
+            /* ********************* contact_info **********************  */
+
+.contact_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    
+}
+
+#icon{
+    font-size: 30px;
+    margin: 10px;
+}
+
+#head{
+    font-size: 15px;
+}
+
+#pera{
+    color: grey;
+}
+
+            /* ********************* contact_form **********************  */
+
+.form_info{
+    position: relative;
+    top: 60px;
+    text-align: center;
+}
+
+#inp1{
+    border-radius: 10px;
+    height: 20px;
+    width: 400px;
+    border: 2px solid #03dac6;
+    height: 30px;
+    background-color: #1e1f26;
+    color: gray;
+}
+
+#inp2{
+    border-radius: 10px;
+    margin: 20px;
+    height: 20px;
+    border: 2px solid #03dac6;
+    background-color: #1e1f26;
+    width: 810px;
+    height: 30px;
+    color: gray;
+}
+
+#inp3{
+    border-radius: 10px;
+    margin: 15px;
+    height: 70px;
+    border: 2px solid #03dac6;
+    background-color: #1e1f26;
+    width: 810px;
+    height: 100px;
+    color: grey;
+}
+
+            /* ********************* contact_button **********************  */
+
+.btn_1 {
+  --clr-palwasha_1: #03dac6;
+  --clr-palwasha_2: hsl(323 21% 16%);
+}
+
+.about_btn {
+  display: grid;
+  place-items: center;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.btn_1 {
+  font-size: 22px;
+  position: relative;
+  top: 100px;
+  text-decoration: none;
+  color: var(--clr-palwasha_1);
+  border: var(--clr-palwasha_1) 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 var(--clr-palwasha_1), 0 0 0.5em 0 var(--clr-palwasha_1);
+}
+
+.btn_1::before {
+  content: "";
+  position: absolute;
+  background: var(--clr-palwasha_1);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1em);
+  opacity: 0.7;
+}
+
+.btn_1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em var(--clr-palwasha_1);
+  opacity: 0;
+  background-color: var(--clr-palwasha_1);
+  z-index: -1;
+  transition: opacity 100ms linear;
+}
+
+.btn_1:hover,
+.btn_1:focus {
+  color: var(--clr-palwasha_2);
+  text-shadow: none;
+}
+
+.btn_1:hover::before,
+.btn_1:focus::before {
+  opacity: 1;
+}
+
+.btn_1:hover::after,
+.btn_1:focus::after {
+  opacity: 1;
+}
+
+
+            /* ********************* media_querry **********************  */
+
+@media(max-width: 600px) {
+    /* .navbar {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav {
+        margin-bottom: 5px;
+    } */
+
+    .head1, .head2, .head3 {
+        font-size: 30px;
+    }
+
+    .contact_info {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    #info1 {
+        margin-bottom: 20px;
+    }
+
+    #inp1, #inp2 {
+        width: 50%;
+    }
+    #inp3{
+        width: 40%; 
+    }
+
+
+    .btn_1 {
+        font-size: 18px;
+        top: 50px;
+    }
+}
+
+
+</style>
+
+<body>
+
+            <!-- ********************* navbar ********************** -->
+
+    <div class="navbar">
+        <a class="nav" href="./index.html">Home</a>
+        <a class="nav" href="./about.html">About</a>
+        <a class="nav" href="./services.html">Services</a>
+        <a class="nav" href="./portfolio.html">Portfolio</a>
+        <a class="nav" href="#">Contact</a>
+    </div>     
+
+             <!-- ********************* contact_title ********************** -->
+
+    <div class="contact_title">
+
+        <h1 class="head1">Contact Me</h1>
+
+        <h4 class="head2">Have You Any Question</h4>
+        <h6 class="head3">I AM AT YOUR SERVICE</h6>
+
+    </div>
+
+           <!-- ********************* contact_info ********************** -->
+
+    <div class="contact_info">
+        <div id="info1">
+            <h5 id="icon"><i class="fa-solid fa-phone" style="color: #03dac6;"></i></h5>
+            <h6 id="head">Call Us On</h6>
+            <p id="pera">09888864345</p>
+        </div>
+        <div id="info1">
+            <h5 id="icon"><i class="fa-solid fa-location-pin" style="color: #03dac6;"></i></h5>
+            <h6 id="head">Office</h6>
+            <p id="pera">44 Street, Karachi</p>
+        </div>
+        <div id="info1">
+            <h5 id="icon"><i class="fa-solid fa-envelope-circle-check" style="color: #03dac6;"></i></h5>
+            <h6 id="head">Email</h6>
+            <p id="pera">info@gmail.com</p>
+        </div>
+        <div id="info1">
+            <h5 id="icon"><i class="fa-solid fa-box" style="color: #03dac6;"></i></h5>
+            <h6 id="head">Website</h6>
+            <p id="pera">Pallu-designer.com.p</p>
+        </div>
+    </div>
+
+    <div>
+        <h4 class="head2">Send Me An Email</h4>
+        <h6 class="head3">I AM VERY RESPONSIVE TO MESSAGES</h6>
+    </div>
+
+               <!-- ********************* contact_form ********************** -->
+
+    <div class="form_info">
+    <form action="#">
+        <input id="inp1" type="text" placeholder="Name"> 
+        <input id="inp1" type="email" placeholder="Email"> <br>
+        <input id="inp2" type="text" placeholder="Subject"> <br>
+        <textarea name="" id="inp3" cols="30" rows="10">Message</textarea>
+    </form>
+    </div>
+
+                <!-- ********************* contact_button ********************** -->
+
+    <div class="about_btn">
+        <a href="./index.html" class="btn_1">Send Message</a>
+    </div>
+
+    
+    
+</body>
+</html>

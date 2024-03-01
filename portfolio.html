@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<style>
+
+body{
+   overflow-x: hidden;
+   width: 100%;
+   height: 100vh;
+   font-size: 16px;
+   background-color: #1e1f26;
+   color: #faebd7;
+}
+
+            /* ********************* navbar **********************  */
+
+a{
+  text-decoration: none;
+}
+  
+.navbar{
+   display: flex;
+   left: 0;
+   position: absolute;
+   top: 20px;
+   font-family: "ROBOTO", sans-serif;
+   width: 100%;
+   height: 75px;
+   box-shadow: 20px 0px 30px rgb(68, 173, 140);
+   background: #1e1f26;
+}
+  
+.nav{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex: 1;
+   color: #03dac6;
+   letter-spacing: 1.8px;
+   font-size: 1.5vw;
+}
+  
+.nav:hover{
+   color: #ff0266;
+
+}
+
+            /* ********************* portfolio_title **********************  */
+.head1{
+  position: relative;
+  top: 160px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 20px;
+  color: #faebd7;
+  text-shadow: 20px 0 70px #faebd7;
+}
+
+.head2{
+  position: relative;
+  top: 100px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 80px;
+  color: #e5ff00;
+  text-shadow: 20px 0 70px #e5ff00;
+}
+
+            /* ********************* portfolio_card **********************  */
+
+.container{
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+.card{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #1e1f26;
+    border-radius: 20px;
+    transition: 0.5s;
+    color: #ffff;
+    text-shadow: #ffff 1px 0 30px;
+    border-top: 1px solid rgb(231, 247, 3);
+    border-right: 1px solid rgb(3, 247, 186);
+    border-left: 1px solid rgb(11, 94, 249);
+    border-bottom: 1px solid rgb(3 247 165);
+}
+
+.card:hover{
+    height: 450px;
+}
+
+.img_box{
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #1e1f26;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card:hover .img_box{
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba( 0,0,0,0, 2) ;
+}
+
+.img_box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content{
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    padding: 0 30px;
+    height: 55px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card:hover .content{
+    height: 250px;
+    top:200px;
+}
+
+.content h2{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.content p{
+    color: #ffff;
+}
+
+.content a{
+    position: relative;
+    top: 15px;
+    display:  inline-block;
+    padding: 12px 25px;
+    color: #1e1f26;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: #03dac6;
+    border-radius: 8px;
+}
+</style>
+<body>
+
+            <!-- ********************* navbar ********************** -->
+
+    <div class="navbar">
+        <a class="nav" href="./index.html">Home</a>
+        <a class="nav" href="./about.html">About</a>
+        <a class="nav" href="./services.html">Services</a>
+        <a class="nav" href="#">Portfolio</a>
+        <a class="nav" href="./contact.html">Contact</a>
+    </div>
+
+            <!-- ********************* portfolio_title ********************** -->
+
+    <div class="portfolio_head">
+        <h5 class="head1">WHAT I WILL DO FOR YOU</h5>
+        <h2 class="head2">Latest Projects</h2>
+       
+    </div>
+    
+
+
+
+
+            <!-- ********************* portfolio_card ********************** -->
+
+    <div class="container">
+        <div class="card">
+            <div class="img_box">
+                <img src="./design_img1.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>UI/UX Design</h2>
+                <p>we are passionate about transforming ideas into visually 
+                    stunning and user-friendly websites. Our team of skilled 
+                    web designers is dedicated to bringing your vision to life
+                </p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img_box">
+                <img src="./design_img2.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>Web Design</h2>
+                <p>we believe in the power of a well-designed website to
+                     make a lasting impact. Our team of experienced web 
+                     designers is here to collaborate with you, turning
+                      your concepts into captivating online realiti
+                </p>
+                <a href="#">Read More</a>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="img_box">
+                <img src="./design_img3.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>Web Development</h2>
+                <p>we believe in the power of a well-designed website to make a lasting impact. Our team
+                     of experienced web designers is here to collaborate with 
+                     you, turning your concepts into captivating online realiti
+                </p>
+                <a href="#">Read More</a>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="img_box">
+                <img src="./design_img4.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>Mobile App</h2>
+                <p>we are passionate about transforming ideas into visually 
+                    stunning and user-friendly websites. Our team of skilled 
+                    web designers is dedicated to bringing your vision to life
+                </p>
+                <a href="#">Read More</a>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="img_box">
+                <img src="./design_img5.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>Digital Marketing</h2>
+                <p>where creativity meets functionality. With a keen eye
+                     for aesthetics and a commitment to seamless user 
+                     experiences, we redefine the digital landscape through 
+                     cutting-edge web Design
+                </p>
+                <a href="#">Read More</a>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="img_box">
+                <img src="./desiggn_img6.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>Figma Design</h2>
+                <p>we thrive on pushing the boundaries of web design. 
+                    Our commitment to excellence is reflected in every project 
+                    we undertake, delivering websites that stand out in a crowded
+                     online world.
+                </p>
+                <a href="#">Read More</a>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="img_box">
+                <img src="./design_img7.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>Photography</h2>
+                <p>we're storytellers in the digital realm. Every line of code and
+                    every pixel we place is a part of a narrative, conveying your 
+                    brand's story to your audience effectively and beautifully..
+                </p>
+                <a href="#">Read More</a>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="img_box">
+                <img src="./design_img9.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>React App</h2>
+                <p>we thrive on pushing the boundaries of web design.
+                     Our commitment to excellence is reflected in every
+                     project we undertake, delivering websites that stand 
+                     in a crowded online world.
+                </p>
+                <a href="#">Read More</a>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="img_box">
+                <img src="./design_img10.jpg" alt="">
+            </div>
+            <div class="content">
+                <h2>Animated Website</h2>
+                <p>where creativity meets functionality. With a keen eye for 
+                    aesthetics and a commitment to seamless user experiences, 
+                    we redefine the digital landscape through cutting-edge web Design
+                </p>
+                <a href="#">Read More</a>
+
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+
+
+    
+</body>
+</html>

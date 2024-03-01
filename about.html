@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+</head>
+
+<style>
+
+body{
+   overflow-x: hidden;
+   width: 100%;
+   height: 100vh;
+   font-size: 16px;
+   background-color: #1e1f26;
+   color: #faebd7;
+}
+                /* ********************* navbar **********************  */
+
+a{
+  text-decoration: none;
+}
+  
+.navbar{
+   display: flex;
+   left: 0;
+   position: absolute;
+   top: 20px;
+   font-family: "ROBOTO", sans-serif;
+   width: 100%;
+   height: 75px;
+   box-shadow: 20px 0px 30px rgb(68, 173, 140);
+   background: #1e1f26;
+}
+  
+.nav{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex: 1;
+   color: #03dac6;
+   letter-spacing: 1.8px;
+   font-size: 1.5vw;
+}
+  
+.nav:hover{
+   color: #ff0266;
+}
+
+                /* ********************* about_text **********************  */
+
+.about_text0{
+   position: relative;
+   top: 170px;
+   left: 130px;
+   color: rgb(255, 255, 255);
+   --color1:
+   rgb(2, 255, 255);
+   --color2:
+   rgb(158, 118, 211);
+   --color3:
+   rgb(238, 15, 101);
+   font-family: 'Blaka', cursive;
+   font-size: 50px;
+   text-shadow: 
+      0 0 10px var(--color1),
+      0 0 30px var(--color2),
+      0 0 70px var(--color3);
+}
+
+.about_text1{
+    position: relative;
+    top: 200px;
+    left: 60px;
+    background-color: black;
+    width: 1200px;
+    height: 1500px;
+    border-radius: 20px;
+    box-shadow: #03dac6 1px 0 25px;
+}
+
+#pera0{
+    position: relative;
+    top: 40px;
+    left: 20px;
+    font-family: 'Blaka', cursive;
+    font-size: 15px;
+    color: white;
+}
+
+.about_text2{
+    position: relative;
+    top: 40px;
+    left: 250px;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: #03dac6 1px 0 25px;
+}
+
+#p1{
+    position: relative;
+    top: 35px;
+    left: 20px;
+}
+
+.about_text3{
+    position: relative;
+    top: -175px;
+    left: 650px;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: #03dac6 1px 0 25px;
+}
+
+             /* ********************* about_information**********************  */
+
+
+#title1{
+    position: relative;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #03dac6;
+}
+
+.p2{
+    background: #ff0266;
+    position: relative;
+    left: 530px;
+    width: 150px;
+    height: 2px;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.about_text4{
+    position: relative;
+    top: -50px;
+    left: 50px;
+    width: 500px;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: #03dac6 1px 0 25px;
+}
+
+ul{
+    position: relative;
+    top: 40px;
+}
+
+#title2{
+    position: relative;
+    top: -100px;
+    left: 230px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #03dac6;
+}
+
+.p3{
+    background: #ff0266;
+    position: relative;
+    top: -100px;
+    left: 260px;
+    width: 100px;
+    height: 2px;
+
+}
+
+.about_text5{
+    position: relative;
+    top: -790px;
+    left: 648px;
+    width: 500px;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: #03dac6 1px 0 25px;
+}
+
+#title3{
+    position: relative;
+    top: -840px;
+    left: 800px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #03dac6;
+}
+
+.p4{
+    background: #ff0266;
+    position: relative;
+    top: -837px;
+    left: 840px;
+    width: 110px;
+    height: 2px;
+   
+}
+
+             /* ********************* about_button1**********************  */
+
+.btn_1 {
+  --clr-palwasha_1: #ff0266;
+  --clr-palwasha_2: hsl(324, 4%, 76%);
+}
+
+.about_btn1 {
+  display: grid;
+  place-items: center;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.btn_1 {
+  font-size: 22px;
+  position: relative;
+  top: 260px;
+  left: -150px;
+  bottom: 186px;
+  text-decoration: none;
+  color: var(--clr-palwasha_1);
+  border: var(--clr-palwasha_1) 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 var(--clr-palwasha_1), 0 0 0.5em 0 var(--clr-palwasha_1);
+  position: relative;
+}
+
+.btn_1::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--clr-palwasha_1);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1em);
+  opacity: 0.7;
+}
+
+.btn_1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em var(--clr-palwasha_1);
+  opacity: 0;
+  background-color: var(--clr-palwasha_1);
+  z-index: -1;
+  transition: opacity 100ms linear;
+}
+
+.btn_1:hover,
+.btn_1:focus {
+  color: var(--clr-palwasha_2);
+  text-shadow: none;
+}
+
+.btn_1:hover::before,
+.btn_1:focus::before {
+  opacity: 1;
+}
+
+.btn_1:hover::after,
+.btn_1:focus::after {
+  opacity: 1;
+}
+
+             /* ********************* about_button2**********************  */
+
+.btn_2 {
+  --clr-palwasha_1: #ff0266;
+  --clr-palwasha_2: hsl(324, 4%, 76%);
+}
+
+.about_btn2 {
+  display: grid;
+  place-items: center;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.btn_2 {
+  font-size: 22px;
+  position: relative;
+  top: 220px;
+  left: 150px;
+  bottom: 186px;
+  text-decoration: none;
+  color: var(--clr-palwasha_1);
+  border: var(--clr-palwasha_1) 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 var(--clr-palwasha_1), 0 0 0.5em 0 var(--clr-palwasha_1);
+  position: relative;
+}
+
+.btn_2::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--clr-palwasha_1);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1em);
+  opacity: 0.7;
+}
+
+.btn_2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em var(--clr-palwasha_1);
+  opacity: 0;
+  background-color: var(--clr-palwasha_1);
+  z-index: -1;
+  transition: opacity 100ms linear;
+}
+
+.btn_2:hover,
+.btn_2:focus {
+  color: var(--clr-palwasha_2);
+  text-shadow: none;
+}
+
+.btn_2:hover::before,
+.btn_2:focus::before {
+  opacity: 1;
+}
+
+.btn_2:hover::after,
+.btn_2:focus::after {
+  opacity: 1;
+}
+
+.empty{
+    position: relative;
+    top: 250px;
+    width: 200px;
+    height: 200px;
+}
+
+
+             /* ********************* media_query **********************  */
+
+@media(max-width: 600px) {
+
+.about_btn1{
+    margin-left: 70px;
+}
+
+.about_text0{
+  left: 20px;
+  font-size: 20px;
+}
+.about_text1{
+    position: relative;
+    top: 200px;
+    left: 50px;
+    width: 259px;
+    height: 2900px;
+    
+}
+#pera0{
+    position: relative;
+    top: 40px;
+    left: 5px;
+    font-size: 8px;
+   
+}
+.about_text2{
+    position: relative;
+    top: 20px;
+    font-size: 12px;
+    left: 20px;
+    width: 220px;
+    height: 170px;
+    
+}
+.p2{
+    position: relative;
+    left: 60px;
+    width: 150px;
+    height: 2px;
+    margin: 1rem 0;
+    padding: 0;
+}
+.about_text3{
+    position: relative;
+    top: 70px;
+    left: 20px;
+    width: 220px;
+    font-size: 12px;
+    height: 170px; 
+}
+#title2{
+    position: relative;
+    top: 50px;
+    left: 40px;   
+}
+.p3{
+    top: 40px;
+    left: 80px;
+
+}
+
+.about_text4{
+    position: relative;
+    top: 80px;
+    left: 20px;
+    width: 210px;
+    height: 800px;
+}
+
+.about_text5{
+    position: relative;
+    top: 100px;
+    left: 20px;
+    width: 210px;
+    height: 910px;
+   
+}
+
+#title3{
+    position: relative;
+    top: 90px;
+    left: 40px;   
+}
+
+.p4{
+    top: 80px;
+    left: 70px;
+}
+.btn_1{
+  top: 250px;
+  left: -200px;
+  bottom: 186px;
+
+}
+.btn_2{
+  top: 208px;
+  left: 10px;
+  bottom: 186px;
+}
+
+.empty{
+    position: relative;
+    top: 100px;
+    width: 200px;
+    height: 50px;
+}
+
+}
+
+@media(max-width: 768px) {
+
+.about_btn1{
+    margin-left: 70px;
+}
+
+.about_text0{
+  left: 20px;
+  font-size: 20px;
+}
+.about_text1{
+    position: relative;
+    top: 200px;
+    left: 50px;
+    width: 259px;
+    height: 2900px;
+    
+}
+#pera0{
+    position: relative;
+    top: 40px;
+    left: 5px;
+    font-size: 8px;
+   
+}
+.about_text2{
+    position: relative;
+    top: 20px;
+    font-size: 12px;
+    left: 20px;
+    width: 220px;
+    height: 170px;
+    
+}
+.p2{
+    position: relative;
+    left: 60px;
+    width: 150px;
+    height: 2px;
+    margin: 1rem 0;
+    padding: 0;
+}
+.about_text3{
+    position: relative;
+    top: 70px;
+    left: 20px;
+    width: 220px;
+    font-size: 12px;
+    height: 170px; 
+}
+#title2{
+    position: relative;
+    top: 50px;
+    left: 40px;   
+}
+.p3{
+    top: 40px;
+    left: 80px;
+
+}
+
+.about_text4{
+    position: relative;
+    top: 80px;
+    left: 20px;
+    width: 210px;
+    height: 800px;
+}
+
+.about_text5{
+    position: relative;
+    top: 100px;
+    left: 20px;
+    width: 210px;
+    height: 910px;
+   
+}
+
+#title3{
+    position: relative;
+    top: 90px;
+    left: 40px;   
+}
+
+.p4{
+    top: 80px;
+    left: 70px;
+}
+.btn_1{
+  top: 250px;
+  left: -200px;
+  bottom: 186px;
+
+}
+.btn_2{
+  top: 208px;
+  left: 10px;
+  bottom: 186px;
+}
+
+.empty{
+    position: relative;
+    top: 100px;
+    width: 200px;
+    height: 50px;
+}
+
+}
+
+
+
+
+
+
+
+
+</style>
+
+<body>
+
+                    <!-- ********************* navbar ********************** -->
+
+    <div class="navbar">
+        <a class="nav" href="./index.html">Home</a>
+        <a class="nav" href="#">About</a>
+        <a class="nav" href="./services.html">Services</a>
+        <a class="nav" href="./portfolio.html">Portfolio</a>
+        <a class="nav" href="./contact.html">Contact</a>
+    </div>    
+
+                    <!-- ********************* about_text  ********************** -->
+
+    <div class="about_text0">
+        I'm Palshu Qasim And I'm Frontend Developer
+    </div>
+     <div class="about_text1">
+        <p id="pera0"> Certainly! Here's a refined version:
+
+            "I am a seasoned Frontend Developer and UI/UX Designer with a rich five-year
+             track record in crafting and designing websites and web applications from the 
+             ground up. My proficiency lies in HTML, CSS, and JavaScript, with a specializ
+             focus on Angular.In addition to my development skills, I excel in providing
+             top-notch design services. I am adept at utilizing tools such as Figma,Adobe
+             ,Illustrator, and Photoshop to seamlessly bring creative concepts to life.
+             My proficiency lies in HTML, CSS, and JavaScript, with a specialized focus
+             focus on Angular.In addition to my development skills, I excel in providing
+             top-notch design services. I am adept at utilizing tools such as Figma, Adobe 
+             ,Illustrator, and Photoshop to seamlessly bring creative concepts to lifen photo
+             raphy is another skill in my arsenal, enhancing the visual appeal of my designs.
+             With a keen eye for detail and a passion for creating exceptional user experience
+             s, I am dedicated to delivering polished and effective solutions in both the frontend 
+             development and design realms." </p>
+
+            <br>
+            <br>
+                    <!-- ********************* about_information********************** -->
+
+
+            <div class="about_title">
+                <h3 id="title1">My Information</h3>
+                <p class="p2"></p>
+            </div>
+
+            <div class="about_text2">
+                <pre><p id="p1">Birthday : 20-june-2001</p></pre>
+                <pre><p id="p1">Website  : www.domain.com</p></pre>
+                <pre><p id="p1">Degree   : Computer Science</p></pre>
+                <pre><p id="p1">City     : Karachi </p></pre>
+            </div>
+
+            <div class="about_text3">
+                <pre><p id="p1">Age        : 21 Years old</p></pre>
+                <pre><p id="p1">Email      : www.domain.com</p></pre>
+                <pre><p id="p1">Phone      : 08686544353</p></pre>
+                <pre><p id="p1">Freelancer : Available </p></pre>
+            </div>
+
+
+            <div class="about_title">
+                <h3 id="title2">Education</h3>
+                <p class="p3"></p>
+            </div>
+
+            <div class="about_text4">
+                <ul>
+                    <li><strong style="color: #ff0266;">Bachelor of Science in Computer Science</strong> <br> <br>
+                        - XYZ University, Anytown, 20XX-20XX <br>
+                        - Relevant Courses: Web Development, Data Structures, Algorithms
+                    </li>
+                        <br>
+
+                    <li><strong style="color: #ff0266;">Diploma in Frontend Development</strong> <br><br>
+                        - Coding Academy, City, 20XX <br>
+                        - Specialized in: HTML, CSS, JavaScript, React
+                    </li>
+                        <br>
+
+                    <li><strong style="color: #ff0266;">Certification in Responsive Web Design</strong> <br><br>
+                        - Online Course, 20XX   <br>
+                        - Explored techniques for creating web designs
+                         that work on various devices and screen sizes.
+                    </li>
+                        <br>
+
+                    <li><strong style="color: #ff0266;">Workshop on UI/UX Design Principles</strong> <br><br>
+                        - Design Institute, 20XX<br>
+                        - Enhanced understanding of user-centered design and usability principles.
+
+                    </li>
+                        <br>
+                    <li><strong style="color: #ff0266;">Online Learning Platforms</strong> <br><br>
+                        - Continuous learning through platforms like Udemy,
+                        Coursera, and freeCodeCamp.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="about_title">
+                <h3 id="title3">Experience</h3>
+                <p class="p4"></p>
+            </div>
+
+            <div class="about_text5">
+                <ul>
+                    <li><strong style="color: #ff0266;">Frontend Developer | Tech Solutions, Anytown | 20XX - Present</strong> <br> <br>
+                        - Developed and maintained robust web applications using HTML5,
+                          CSS3, and JavaScript. <br>
+                        - Implemented responsive design principles to ensure seamless
+                          user experiences across devices. <br>
+                        - Integrated RESTful APIs to fetch and display dynamic data, 
+                          enhancing the overall functionality.
+                    </li>
+                        <br>
+
+                    <li><strong style="color: #ff0266;">Junior Web Developer |  Web Studios, City | 20XX - 20XX
+                    </strong> <br><br>
+                        - Contributed to the development of modern, visually appealing 
+                          websites using React.js. <br>
+                        - Applied state management techniques to create interactive and
+                         dynamic user interfaces. <br>
+                        - Collaborated with backend developers to integrate frontend 
+                          components with server-side logic
+
+                    </li>
+                        <br>
+
+                    <li><strong style="color: #ff0266;">Intern | Tech Innovators, City </strong> <br><br>
+                        - Enhanced proficiency in coding practices by working on real-world
+                         frontend challenges. <br>
+                        - Explored techniques for creating web designs
+                         that work on various devices and screen sizes.
+                    </li>
+                </ul>
+            </div>
+    </div>
+
+                     <!-- ********************* about_button ********************** -->
+
+    <div class="about_btn1">
+        <a href="./resume.html" class="btn_1">View CV</a>
+    </div>
+
+    <div class="about_btn2">
+        <a href="./index.html" class="btn_2">Discover</a>
+    </div>
+
+    <div class="empty">
+
+    </div>
+   
+
+    
+
+
+
+   
+
+              
+
+                  
+                
+    
+</body>
+</html>
